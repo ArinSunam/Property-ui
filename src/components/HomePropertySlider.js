@@ -20,16 +20,19 @@ const HomePropertySlider = () => {
   return (
     <div>
 
-      <Slider {...settings} >
+      <Slider {...settings} className='ml-[30px]'>
 
         {propertyData.map((data) => {
-          return <div className=' mt-9 flex-col items-center  '>
+          return <div className=' mt-9 flex-col items-center space-y-4 '>
 
             <img className='h-[250px] w-[350px]' src={data.img} alt="" />
 
-            <h1 className='mt-[12px] text-xl text-teal-900 font-semibold border border-b-2'>{data.price}</h1>
 
-            <h1>{data.name}</h1>
+            <h1 className='mt-[12px] text-xl text-teal-900 font-semibold border border-b-2 border-b-teal-900 mr-[320px]'>{data.price}</h1>
+
+            <h1 className='text-sm mt-[-2px]'>{data.name}</h1>
+            <h1 className='text-2xl font-bold'>{data.location}</h1>
+            <Button className='rounded-full bg-teal-900'>See details</Button>
 
           </div>
 

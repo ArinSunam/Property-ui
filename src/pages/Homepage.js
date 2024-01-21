@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import { Button } from "@material-tailwind/react";
 import HomeMainSlider from "../components/HomeMainSlider";
 import HomePropertySlider from "../components/HomePropertySlider";
+import AboutCompo from "../components/AboutCompo";
 
 
 const Homepage = () => {
@@ -41,6 +42,7 @@ const Homepage = () => {
       </div>
 
       <HomePropertySlider />
+      <AboutCompo />
 
 
 

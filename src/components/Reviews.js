@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import { reviewData } from '../Dummy/ReviewData';
 import Slider from 'react-slick';
 
+
 const Reviews = () => {
 
-  const [currentSlide, setCurrentSlide] = useState(0);
+
 
   const settings = {
     dots: true,
@@ -17,14 +18,18 @@ const Reviews = () => {
     slidesToScroll: 1,
   }
 
+
   return (
     <div className='pt-[60px] ml-[125px]'>
+
       <h1 className='text-3xl text-[#13263b] mb-16'>Customer Says</h1>
+
+
 
 
       <Slider {...settings}>
         {reviewData.map((data) => {
-          return <div className=' '>
+          return <div>
             <div className='h-[450px] w-[270px]'>
 
 
@@ -33,12 +38,17 @@ const Reviews = () => {
                 <img className='h-[150px] w-[150px] rounded-full object-cover' src={data.img} alt="" />
                 <div className='mt-2'>
                   <p className='text-yellow-700  '>{data.rating}</p>
-                  <p className='text-xl text-[#13263b]'>{data.name}</p>
+                  <p className='font-semibold text-xl text-[#13263b]'>{data.name}</p>
                 </div>
 
 
-                <p >{data.review}</p>
-                <p>{data.job}</p>
+                <div className=''>
+                  <p className='text-sm pb-3'>{data.review}</p>
+                  <p className='text-sm text-gray-800'>{data.job}</p>
+                </div>
+
+
+
               </div>
 
             </div>

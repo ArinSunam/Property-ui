@@ -6,12 +6,16 @@ import HomeMainSlider from "../components/HomeMainSlider";
 import HomePropertySlider from "../components/HomePropertySlider";
 import AboutCompo from "../components/AboutCompo";
 import Reviews from "../components/Reviews";
+import ForUser from "../components/ForUser";
+import Agency from "../components/Agency"
 
 
 const Homepage = () => {
 
   return (
     <>
+      {/* Section above the image slider */}
+
       <div className="absolute  h-full w-full bg-black/0 z-50">
         <Header />
         <div className='grid items-center justify-center mt-[155px] space-y-7'>
@@ -22,7 +26,7 @@ const Homepage = () => {
 
             placeholder='Your ZIP code or City e.g. Dharan'></input>
 
-            <Button className='ml-2 bg-teal-900 rounded-full'
+            <Button className='ml-2 bg-[#005555] rounded-full'
               size='lg'
 
             >Search</Button>
@@ -33,18 +37,29 @@ const Homepage = () => {
       <HomeMainSlider />
 
 
-
+      {/* INDICATOR ABOVE PROPERTY SLIDES */}
 
       <div className="mt-16 flex justify-between items-end px-20">
 
-        <h1 className="text-4xl text-indigo-900 font-medium"> Popular properties</h1>
-        <Button className="bg-teal-900 rounded-full py-5 px-4"
+        <h1 className="text-4xl text-[#13263b]  font-medium"> Popular properties</h1>
+        <Button className="bg-[#005555] rounded-full py-5 px-4"
         >View All Properties</Button>
       </div>
 
       <HomePropertySlider />
       <AboutCompo />
       <Reviews />
+      <ForUser />
+
+      {/* AGENT RECRUIT */}
+
+      <div className="my-12 flex flex-col items-center space-y-5">
+        <h1 className="text-[32px] font-[500] text-[#13263b] ">Be a part of our growing real estate agent </h1>
+        <Button className=" bg-[#005555] rounded-full py-5">Apply for a real estate agent</Button>
+
+      </div>
+
+      <Agency />
 
 
 

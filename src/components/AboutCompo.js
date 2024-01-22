@@ -16,7 +16,7 @@ const AboutCompo = () => {
           <p className='text-[#13263b] font-semibold pt-2'>Our Properties</p>
           <p className='text-sm  text-gray-800 font-medium py-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores esse, adipisci </p>
 
-          <p className='text-sm text-[#13263b]   underline pb-[10px]  hover:mr-0 duration-1000' >Learn More</p>
+          <p className='text-sm text-[#13263b]   underline leading-5 pb-[10px]  ' >Learn More</p>
 
         </div>
 

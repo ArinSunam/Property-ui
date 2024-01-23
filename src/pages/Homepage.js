@@ -8,6 +8,7 @@ import AboutCompo from "../components/AboutCompo";
 import Reviews from "../components/Reviews";
 import ForUser from "../components/ForUser";
 import Agency from "../components/Agency"
+import Footer from "../components/Footer";
 
 
 const Homepage = () => {
@@ -60,6 +61,7 @@ const Homepage = () => {
       </div>
 
       <Agency />
+      <Footer />
 
 
 

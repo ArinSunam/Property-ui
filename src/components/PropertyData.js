@@ -39,7 +39,7 @@ export const propertyData =
       img: `https://media.istockphoto.com/id/1477478254/photo/3d-rendering-of-modern-house-with-bionic-natural-curves-plastic-forms.jpg?s=1024x1024&w=is&k=20&c=qEZSW5wDrqRrAJgIpGbbeeGFj383y53b0OEWGzxhLUg=`,
       name: `ArchiPlaza`,
       location: `Bhaktapur, Nepal`,
-      Price: `Rs.10,00,000`,
+      price: `Rs.10,00,000`,
       desc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem cupiditate mollitia nesciunt qui amet illum optio quas perspiciatis deserunt. Doloribus culpa corrupti sit iste dicta aliquid ipsam excepturi voluptatum repudiandae laboriosam deleniti animi odio ut eum voluptates placeat error quas, quos totam perspiciatis sed eveniet? Sapiente atque sequi veritatis esse omnis tempore quos dolorum, nesciunt, similique ratione deserunt assumenda mollitia.`
     },
   ]

@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react'
 import { reviewData } from '../Dummy/ReviewData';
 import Slider from 'react-slick';
+import { FaStar } from "react-icons/fa";
 
 
 const Reviews = () => {
@@ -36,8 +37,16 @@ const Reviews = () => {
               <div className='flex flex-col items-baseline space-y-6'>
 
                 <img className='h-[150px] w-[150px] rounded-full object-cover' src={data.img} alt="" />
-                <div className='mt-2'>
-                  <p className='text-yellow-700  '>{data.rating}</p>
+                <div className='my-2'>
+                  <div className=' text-sm flex gap-1'>
+                    <p className='text-yellow-700  '><FaStar /></p>
+                    <p className='text-yellow-700  '><FaStar /></p>
+                    <p className='text-yellow-700  '><FaStar /></p>
+                    <p className='text-yellow-700  '><FaStar /></p>
+                    <p className='text-yellow-700  '><FaStar /></p>
+
+                  </div>
+
                   <p className='font-semibold text-xl text-[#13263b]'>{data.name}</p>
                 </div>
 

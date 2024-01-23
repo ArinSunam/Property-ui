@@ -27,9 +27,10 @@ const HomePropertySlider = () => {
       <Slider {...settings} className='ml-[50px]'>
 
         {propertyData.map((data) => {
-          return <div className=' mt-12 h-[500px]'>
+          return <div className=' mt-12 h-[525px]'>
 
             {/* Box */}
+
 
             <img className='h-[250px] w-[380px] rounded-sm object-cover' src={data.img} alt="" />
 

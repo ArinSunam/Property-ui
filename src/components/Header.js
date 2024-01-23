@@ -15,8 +15,8 @@ const Header = () => {
         </div>
 
         <div className='space-x-6 '>
-          <NavLink className='hover:font-medium hover:text-lg'> Home</NavLink>
-          <NavLink className='hover:font-medium hover:text-lg'> Properties</NavLink>
+          <NavLink to='/' className='hover:font-medium hover:text-lg'> Home</NavLink>
+          <NavLink to='/properties' className='hover:font-medium hover:text-lg'> Properties</NavLink>
           <NavLink className='hover:font-medium hover:text-lg'> Services</NavLink>
           <NavLink className='hover:font-medium hover:text-lg'> About</NavLink>
           <NavLink className='hover:font-medium hover:text-lg'> Contact Us</NavLink>

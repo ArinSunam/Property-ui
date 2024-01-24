@@ -11,7 +11,7 @@ const ForUser = () => {
         {/* TOPICS */}
 
         <h1 className='font-[600] text-[32px] text-[#13263b]  text-center w-[380px] m-auto mb-4'>Let's find home that's perfect for you</h1>
-        <p className='text-sm text-center text-gray-800  w-[300px]  m-auto mb-4 '>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti architecto alias consectetur </p>
+        <p className='text-sm text-center text-[#777] w-[300px]  m-auto mb-4 '>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti architecto alias consectetur </p>
 
 
 
@@ -32,7 +32,7 @@ const ForUser = () => {
 
               <div className=' mt-3 col-start-2 col-end-5'>
                 <h1 className='text-[18px] font-medium text-[#13263b] mb-2'>2M Properties</h1>
-                <p className='text-sm text-gray-800 '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, eius sint tempora non architecto</p>
+                <p className='text-sm text-[#777] '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, eius sint tempora non architecto</p>
 
               </div>
             </div>
@@ -47,7 +47,7 @@ const ForUser = () => {
 
               <div className=' mt-3 col-start-2 col-end-5'>
                 <h1 className='text-[18px] font-medium text-[#13263b] mb-2'>Top Rated Agents</h1>
-                <p className='text-sm text-gray-800 '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, eius sint tempora non architecto</p>
+                <p className='text-sm text-[#777] '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, eius sint tempora non architecto</p>
 
               </div>
             </div>
@@ -83,28 +83,28 @@ const ForUser = () => {
           {/* Data1 */}
           <div className='mr-[130px] flex flex-col items-center'>
             <h1 className='font-bold text-[40px] text-[#13263b] '>3,981</h1>
-            <p className='text-sm text-gray-800 '># Buy of properties</p>
+            <p className='text-sm text-[#777] '># Buy of properties</p>
 
           </div>
 
           {/* Data2 */}
           <div className='mr-[130px] flex flex-col items-center'>
             <h1 className='font-bold text-[40px] text-[#13263b] '>2,217</h1>
-            <p className='text-sm text-gray-800 '># of sell properties</p>
+            <p className='text-sm text-[#777] '># of sell properties</p>
 
           </div>
 
           {/* Data3 */}
           <div className='mr-[130px] flex flex-col items-center'>
             <h1 className='font-bold text-[40px] text-[#13263b] '>9,534</h1>
-            <p className='text-sm text-gray-800 '>#  of all properties</p>
+            <p className='text-sm text-[#777] '>#  of all properties</p>
 
           </div>
 
           {/* Data4 */}
           <div className='flex flex-col items-center'>
             <h1 className='font-bold text-[40px] text-[#13263b] '>7,081</h1>
-            <p className='text-sm text-gray-800 '># of agent</p>
+            <p className='text-sm text-[#777] '># of agent</p>
 
           </div>
 

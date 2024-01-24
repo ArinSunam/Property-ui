@@ -31,7 +31,7 @@ const Reviews = () => {
       <Slider {...settings}>
         {reviewData.map((data) => {
           return <div>
-            <div className='h-[450px] w-[270px]'>
+            <div className='h-[400px] w-[270px]'>
 
 
               <div className='flex flex-col items-baseline space-y-6'>

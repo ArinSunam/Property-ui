@@ -6,9 +6,45 @@ import { GiVikingLonghouse } from "react-icons/gi";
 import { MdOutlineRealEstateAgent } from "react-icons/md";
 import Reviews from '../components/Reviews';
 import Footer from '../components/Footer';
+import { motion } from "framer-motion";
 
 
 const Services = () => {
+
+
+  const textVariants = {
+    initial: {
+      y: 200,
+      opacity: 0,
+    },
+    animate: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+        staggerChildren: 0.1
+      },
+    },
+    smallAnimate: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.75,
+        staggerChildren: 0.1
+      },
+    },
+    boxAnimate: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.75,
+        staggerChildren: 0.1
+      },
+    },
+
+  }
+
+
   return (
     <div>
       {/* HEADER */}
@@ -16,11 +52,11 @@ const Services = () => {
         <Header />
 
         <div className='space-y-4 flex flex-col items-center'>
-          <h1 className='text-white text-[40px] font-semibold'>Services</h1>
-          <div>
+          <motion.h1 className='text-white text-[40px] font-semibold' variants={textVariants} animate="animate" initial="initial">Services</motion.h1>
+          <motion.div variants={textVariants} animate="smallAnimate" initial="initial">
             <span className='text-white'>Home</span>
             <span className='text-gray-600 p-1'>/    Services</span>
-          </div>
+          </motion.div>
         </div>
       </div>
 
@@ -29,7 +65,7 @@ const Services = () => {
 
 
       <div className='py-8  bg-[#e6e6f7]'>
-        <div className='mx-[110px]  grid grid-cols-4 space-x-6 space-y-7' >
+        <motion.div className='mx-[110px]  grid grid-cols-4 space-x-6 space-y-7' variants={textVariants} animate="boxAnimate" initial="initial">
 
           {/* properties */}
 
@@ -118,7 +154,7 @@ const Services = () => {
 
           </div>
 
-        </div>
+        </motion.div>
       </div>
 
 

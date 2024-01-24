@@ -7,7 +7,7 @@ const HomeMainSlider = () => {
   const settings = {
     fade: false,
     speed: 1000,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 4000,
     infinite: true,
     autoplay: true,
     slidesToShow: 1,

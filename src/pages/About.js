@@ -47,10 +47,10 @@ const About = () => {
 
             {/* item-1 */}
 
-            <div className='w-[370px] mb-9 grid grid-cols-4 gap-1  '>
+            <div className='group w-[370px] mb-9 grid grid-cols-4 gap-1  '>
 
-              <div className='bg-gray-200 h-[85px] w-[85px] rounded-full col-start-1 col-end-2 items-center'>
-                <IoMdHome className='text-xl ml-[36px] mt-[36px]' />
+              <div className=' bg-gray-200 h-[85px] w-[85px] rounded-full col-start-1 col-end-2 items-center group-hover:bg-gray-100 group-hover:border-[#13263b] border-2 transition-all duration-700'>
+                <IoMdHome className='text-xl ml-[31px] mt-[33px] group-hover:text-[#13263b]  transition-all duration-700' />
               </div>
 
               <div className=' mt-3 col-start-2 col-end-5'>
@@ -61,10 +61,10 @@ const About = () => {
             </div>
             {/* item-2 */}
 
-            <div className='w-[370px] mb-9 grid grid-cols-4 gap-1 '>
+            <div className='group w-[370px] mb-9 grid grid-cols-4 gap-1 '>
 
-              <div className='bg-gray-200 h-[85px] w-[85px] rounded-full col-start-1 col-end-2 items-center'>
-                <FaUser className='text-xl ml-[36px] mt-[36px]' />
+              <div className=' bg-gray-200 h-[85px] w-[85px] rounded-full col-start-1 col-end-2 items-center group-hover:bg-gray-100 group-hover:border-[#13263b] border-2 transition-all duration-700'>
+                <FaUser className='text-xl ml-[31px] mt-[33px] group-hover:text-[#13263b]  transition-all duration-700' />
 
               </div>
 
@@ -77,10 +77,10 @@ const About = () => {
 
             {/* item-3 */}
 
-            <div className='w-[370px] grid grid-cols-4 gap-1 '>
+            <div className='group w-[370px] grid grid-cols-4 gap-1 '>
 
-              <div className='bg-gray-200 h-[85px] w-[85px] rounded-full col-start-1 col-end-2 items-center'>
-                <MdOutlineSecurity className='text-xl ml-[36px] mt-[36px]' />
+              <div className=' bg-gray-200 h-[85px] w-[85px] rounded-full col-start-1 col-end-2 items-center group-hover:bg-gray-100 group-hover:border-[#13263b] border-2 transition-all duration-700'>
+                <MdOutlineSecurity className='text-xl ml-[31px] mt-[33px] group-hover:text-[#13263b]  transition-all duration-700' />
 
               </div>
 
@@ -111,10 +111,10 @@ const About = () => {
 
             {/* item-1 */}
 
-            <div className='w-[370px] mb-9 grid grid-cols-4 gap-1  '>
+            <div className='group w-[370px] mb-9 grid grid-cols-4 gap-1  '>
 
-              <div className='bg-gray-200 h-[85px] w-[85px] rounded-full col-start-1 col-end-2 items-center'>
-                <IoMdHome className='text-xl ml-[36px] mt-[36px]' />
+              <div className=' bg-gray-200 h-[85px] w-[85px] rounded-full col-start-1 col-end-2 items-center group-hover:bg-gray-100 group-hover:border-[#13263b] border-2 transition-all duration-700'>
+                <IoMdHome className='text-xl ml-[31px] mt-[33px] group-hover:text-[#13263b]  transition-all duration-700' />
               </div>
 
               <div className=' mt-3 col-start-2 col-end-5'>
@@ -125,10 +125,10 @@ const About = () => {
             </div>
             {/* item-2 */}
 
-            <div className='w-[370px] mb-9 grid grid-cols-4 gap-1 '>
+            <div className='group w-[370px] mb-9 grid grid-cols-4 gap-1 '>
 
-              <div className='bg-gray-200 h-[85px] w-[85px] rounded-full col-start-1 col-end-2 items-center'>
-                <FaUser className='text-xl ml-[36px] mt-[36px]' />
+              <div className=' bg-gray-200 h-[85px] w-[85px] rounded-full col-start-1 col-end-2 items-center group-hover:bg-gray-100 group-hover:border-[#13263b] border-2 transition-all duration-700'>
+                <FaUser className='text-xl ml-[31px] mt-[33px] group-hover:text-[#13263b]  transition-all duration-700' />
 
               </div>
 
@@ -141,10 +141,10 @@ const About = () => {
 
             {/* item-3 */}
 
-            <div className='w-[370px] grid grid-cols-4 gap-1 '>
+            <div className='group w-[370px] grid grid-cols-4 gap-1 '>
 
-              <div className='bg-gray-200 h-[85px] w-[85px] rounded-full col-start-1 col-end-2 items-center'>
-                <MdOutlineSecurity className='text-xl ml-[36px] mt-[36px]' />
+              <div className=' bg-gray-200 h-[85px] w-[85px] rounded-full col-start-1 col-end-2 items-center group-hover:bg-gray-100 group-hover:border-[#13263b] border-2 transition-all duration-700'>
+                <MdOutlineSecurity className='text-xl ml-[31px] mt-[33px] group-hover:text-[#13263b]  transition-all duration-700' />
 
               </div>
 

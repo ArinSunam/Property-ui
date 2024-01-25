@@ -31,7 +31,7 @@ const Homepage = () => {
       y: 0,
       opacity: 1,
       transition: {
-        duration: 1,
+        duration: 0.75,
         staggerChildren: 0.1
       },
     },
@@ -39,7 +39,7 @@ const Homepage = () => {
       y: 0,
       opacity: 1,
       transition: {
-        duration: 1.5,
+        duration: 1.25,
         staggerChildren: 0.1
       },
     },
@@ -80,17 +80,17 @@ const Homepage = () => {
 
       <HomePropertySlider />
 
-      <motion.div variants={textVariants} whileInView="slowAnimate" initial="initial">
-        <AboutCompo />
-      </motion.div>
+
+      <AboutCompo />
+
 
       <Reviews />
       <ForUser />
 
       {/* AGENT RECRUIT */}
 
-      <motion.div className="my-12 flex flex-col items-center space-y-5" variants={textVariants} whileInView="searchAnimate" initial="initial">
-        <motion.h1 className="text-[32px] font-[500] text-[#13263b] " variants={textVariants} whileInView="animate" initial="initial">Be a part of our growing real estate agent </motion.h1>
+      <motion.div className="my-12 flex flex-col items-center space-y-5" variants={textVariants} whileInView="slowAnimate" initial="initial">
+        <motion.h1 className="text-[32px] font-[500] text-[#13263b] " variants={textVariants} whileInView="searchAnimate" initial="initial">Be a part of our growing real estate agent </motion.h1>
         <Button className=" bg-[#005555] rounded-full py-5" >Apply for a real estate agent</Button>
 
       </motion.div>

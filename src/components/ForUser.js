@@ -1,9 +1,36 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { IoMdHome } from "react-icons/io";
 import { FaUser } from "react-icons/fa";
 import { MdOutlineSecurity } from "react-icons/md";
+import CountUp from 'react-countup';
+import ScrollTrigger from 'react-scroll-trigger';
+import { motion } from "framer-motion"
 
 const ForUser = () => {
+  const [counterOn, setCounterOn] = useState(false);
+  const textVariants = {
+    initial: {
+      y: 200,
+      opacity: 0,
+    },
+    animate: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 1.5,
+        staggerChildren: 0.1
+      },
+    },
+    smallAnimate: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.75,
+        staggerChildren: 0.1
+      },
+    },
+  }
+
   return (
     <div className='mt-[100px] '>
       <div className='bg-[#f7f7f9] py-[64px] px-[125px]'>
@@ -78,37 +105,46 @@ const ForUser = () => {
 
         {/* Numbers */}
 
-        <div className='mt-[50px] flex'>
+        <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
+          <motion.div className='mt-[50px] flex' variants={textVariants} whileInView="animate" initial="initial">
 
-          {/* Data1 */}
-          <div className='mr-[130px] flex flex-col items-center'>
-            <h1 className='font-bold text-[40px] text-[#13263b] '>3,981</h1>
-            <p className='text-sm text-[#777] '># Buy of properties</p>
+            {/* Data1 */}
+            <div className='mr-[130px] flex flex-col items-center'>
+              <h1 className='font-bold text-[40px] text-[#13263b] '>{counterOn && <CountUp start={1000}
+                end={3981} duration={3} delay={1} />} </h1>
+              <p className='text-sm text-[#777] '># Buy of properties</p>
 
-          </div>
+            </div>
 
-          {/* Data2 */}
-          <div className='mr-[130px] flex flex-col items-center'>
-            <h1 className='font-bold text-[40px] text-[#13263b] '>2,217</h1>
-            <p className='text-sm text-[#777] '># of sell properties</p>
+            {/* Data2 */}
+            <div className='mr-[130px] flex flex-col items-center'>
+              <h1 className='font-bold text-[40px] text-[#13263b] '>{counterOn && <CountUp start={1000}
+                end={2217} duration={3} delay={0.5} />} </h1>
+              <p className='text-sm text-[#777] '># of sell properties</p>
 
-          </div>
+            </div>
 
-          {/* Data3 */}
-          <div className='mr-[130px] flex flex-col items-center'>
-            <h1 className='font-bold text-[40px] text-[#13263b] '>9,534</h1>
-            <p className='text-sm text-[#777] '>#  of all properties</p>
+            {/* Data3 */}
+            <div className='mr-[130px] flex flex-col items-center'>
+              <h1 className='font-bold text-[40px] text-[#13263b] '>{counterOn && <CountUp start={1000}
+                end={9812} duration={3} delay={0.5} />} </h1>
+              <p className='text-sm text-[#777] '>#  of all properties</p>
 
-          </div>
+            </div>
 
-          {/* Data4 */}
-          <div className='flex flex-col items-center'>
-            <h1 className='font-bold text-[40px] text-[#13263b] '>7,081</h1>
-            <p className='text-sm text-[#777] '># of agent</p>
+            {/* Data4 */}
+            <div className='flex flex-col items-center'>
+              <h1 className='font-bold text-[40px] text-[#13263b] '>{counterOn && <CountUp start={1000}
+                end={7081} duration={3} delay={0.5} />} </h1>
+              <p className='text-sm text-[#777] '># of agent</p>
 
-          </div>
+            </div>
 
-        </div>
+          </motion.div>
+
+
+        </ScrollTrigger>
+
 
 
       </div>

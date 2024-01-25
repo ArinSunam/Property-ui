@@ -7,20 +7,48 @@ import { agentData } from '../Dummy/AgentData'
 import { FaXTwitter } from "react-icons/fa6";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import Footer from '../components/Footer';
+import { motion } from "framer-motion"
 
 const About = () => {
+
+  const textVariants = {
+    initial: {
+      y: 200,
+      opacity: 0,
+    },
+    animate: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+        staggerChildren: 0.1
+      },
+    },
+    smallAnimate: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.75,
+        staggerChildren: 0.1
+      },
+    },
+  }
+
   return (
     <div>
       {/* HEADER */}
-      <div className="flex flex-col space-y-[80px] m-0 h-[70vh] w-[100vw]  bg-cover" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1555169145-b09a196d2c31?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')" }}>
+      <div className="flex flex-col space-y-[80px] m-0 h-[70vh] w-[100vw]  bg-cover" style={{
+        background: "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1555169145-b09a196d2c31?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+
+      }}>
         <Header />
 
         <div className='space-y-4 flex flex-col items-center'>
-          <h1 className='text-white text-[40px] font-semibold'>About</h1>
-          <div>
+          <motion.h1 className='text-white text-[40px] font-semibold' variants={textVariants} animate="animate" initial="initial">About</motion.h1>
+          <motion.div variants={textVariants} animate="smallAnimate" initial="initial">
             <span className='text-white'>Home</span>
-            <span className='text-gray-800 p-1'>/    About</span>
-          </div>
+            <span className='text-gray-600 p-1'>/    About</span>
+          </motion.div>
         </div>
       </div>
 

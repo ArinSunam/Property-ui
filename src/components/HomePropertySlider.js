@@ -5,8 +5,11 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css'
 import { Button } from '@material-tailwind/react';
 import { FaBed, FaBath } from "react-icons/fa";
+import { useNavigate } from 'react-router';
 
 const HomePropertySlider = () => {
+
+  const nav = useNavigate();
 
   const settings = {
     dots: true,
@@ -58,7 +61,7 @@ const HomePropertySlider = () => {
               </div>
 
 
-              <Button className='mt-4 rounded-full bg-[#005555] w-[120px]'>See details</Button>
+              <Button className='mt-4 rounded-full bg-[#005555] w-[120px]' onClick={() => nav(`/`)}>See details</Button>
 
             </div>
 

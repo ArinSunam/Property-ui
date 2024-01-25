@@ -5,8 +5,32 @@ import { Button } from '@material-tailwind/react';
 import { FaBed, FaBath } from "react-icons/fa";
 import { propertyData } from '../components/PropertyData';
 import Footer from '../components/Footer';
+import { motion } from "framer-motion"
 
 const Properties = () => {
+
+  const textVariants = {
+    initial: {
+      y: 200,
+      opacity: 0,
+    },
+    animate: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+        staggerChildren: 0.1
+      },
+    },
+    smallAnimate: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.75,
+        staggerChildren: 0.1
+      },
+    },
+  }
   return (
     <div>
 
@@ -16,11 +40,11 @@ const Properties = () => {
         <Header />
 
         <div className='space-y-4 flex flex-col items-center'>
-          <h1 className='text-white text-[40px] font-semibold'>Properties</h1>
-          <div>
+          <motion.h1 className='text-white text-[40px] font-semibold' variants={textVariants} animate="animate" initial="initial">Properties</motion.h1>
+          <motion.div variants={textVariants} animate="smallAnimate" initial="initial">
             <span className='text-white'>Home</span>
             <span className='text-gray-600 p-1'>/    Properties</span>
-          </div>
+          </motion.div>
 
 
         </div>

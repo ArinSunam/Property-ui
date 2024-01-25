@@ -3,14 +3,30 @@ import { GiFamilyHouse } from "react-icons/gi";
 import { BsBuildings } from "react-icons/bs";
 import { GiVikingLonghouse } from "react-icons/gi";
 import { MdOutlineRealEstateAgent } from "react-icons/md";
+import { motion } from "framer-motion";
 
 const AboutCompo = () => {
+
+  const textVariants = {
+    initial: {
+      y: 200,
+      opacity: 0,
+    },
+    animate: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.75,
+        staggerChildren: 0.1
+      },
+    },
+  }
   return (
     <div className='mt-[100px] py-3  '>
 
       {/* properties */}
 
-      <div className='h-[340px] bg-[#e6e6f7] w-[100vw] flex py-3 pb-5 '>
+      <motion.div className='h-[340px] bg-[#e6e6f7] w-[100vw] flex py-3 pb-5 ' variants={textVariants} whileInView="animate" initial="initial">
         <div className='relative top-4 w-[250px] bg-white h-[270px] py-6 px-3 ml-[125px] text-center rounded'>
           <GiFamilyHouse className='m-auto text-6xl text-[#13263b]' />
           <p className='text-[#13263b] font-semibold pt-2'>Our Properties</p>
@@ -56,7 +72,7 @@ const AboutCompo = () => {
 
         </div>
 
-      </div>
+      </motion.div>
 
 
     </div>

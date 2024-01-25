@@ -6,27 +6,61 @@ import { MdEmail } from "react-icons/md";
 import { Button, Input } from "@material-tailwind/react";
 import Footer from '../components/Footer';
 import { IoCall } from "react-icons/io5";
+import { motion } from "framer-motion"
 
 const Contact = () => {
+
+  const textVariants = {
+    initial: {
+      y: 200,
+      opacity: 0,
+    },
+    animate: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+        staggerChildren: 0.1
+      },
+    },
+    smallAnimate: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.75,
+        staggerChildren: 0.1
+      },
+    },
+    boxAnimate: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.75,
+        staggerChildren: 0.1
+      },
+    },
+
+  }
+
   return (
     <div>
       {/* Header Section */}
 
-      <div className="flex flex-col space-y-[80px] m-0 h-[70vh] w-[100vw]  bg-cover" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1531971589569-0d9370cbe1e5?q=80&w=1481&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')" }}>
+      <div className="flex flex-col space-y-[80px] m-0 h-[70vh] w-[100vw]  bg-cover" style={{ background: "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1531971589569-0d9370cbe1e5?q=80&w=1481&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')" }}>
         <Header />
 
         <div className='space-y-4 flex flex-col items-center'>
-          <h1 className='text-white text-[40px] font-semibold'>Contact Us</h1>
-          <div>
+          <motion.h1 className='text-white text-[40px] font-semibold' variants={textVariants} animate="animate" initial="initial">Contact Us</motion.h1>
+          <motion.div variants={textVariants} animate="smallAnimate" initial="initial">
             <span className='text-white'>Home</span>
             <span className='text-gray-600 p-1'>/    Contact Us</span>
-          </div>
+          </motion.div>
         </div>
       </div>
 
       {/* BODY */}
 
-      <div className='mt-[70px] ml-[40px] grid grid-cols-3'>
+      <motion.div className='mt-[70px] ml-[40px] grid grid-cols-3' variants={textVariants} animate="boxAnimate" initial="initial">
         <div className='flex flex-col '>
 
           {/* item-1 */}
@@ -115,7 +149,7 @@ const Contact = () => {
 
         </div>
 
-      </div>
+      </motion.div>
 
       {/* BUTTON */}
       <Button className='bg-[#005555] mt-5 py-4 mx-[600px] rounded-full'>Send Message</Button>

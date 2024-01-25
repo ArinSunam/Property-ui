@@ -140,8 +140,8 @@ const Contact = () => {
 
 
           <div className='space-y-5'>
-            <Input label='Subject' size='lg' className='w-[682px] ' />
-            <Input label='Message' className='w-[682px] py-36
+            <Input label='Subject' size='lg' className='w-[692px] ' />
+            <Input label='Message' className='w-[692px] py-36
              ' />
 
           </div>

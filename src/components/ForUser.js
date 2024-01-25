@@ -119,7 +119,7 @@ const ForUser = () => {
             {/* Data2 */}
             <div className='mr-[130px] flex flex-col items-center'>
               <h1 className='font-bold text-[40px] text-[#13263b] '>{counterOn && <CountUp start={1000}
-                end={2217} duration={3} delay={0.5} />} </h1>
+                end={2217} duration={2} delay={0} />} </h1>
               <p className='text-sm text-[#777] '># of sell properties</p>
 
             </div>

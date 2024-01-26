@@ -71,7 +71,7 @@ const Homepage = () => {
 
       {/* INDICATOR ABOVE PROPERTY SLIDES */}
 
-      <div className="mt-16 flex justify-between items-end px-20">
+      <div className="mt-16 flex justify-between items-end px-20 mmd:flex mmd:flex-col mmd:space-y-3 mmd:items-start">
 
         <h1 className="text-4xl text-[#13263b]  font-medium"> Popular properties</h1>
         <Button className="bg-[#005555] rounded-full py-5 px-4"

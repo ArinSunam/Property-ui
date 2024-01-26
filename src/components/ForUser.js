@@ -44,10 +44,10 @@ const ForUser = () => {
 
         {/* GRID SECTION */}
 
-        <div className='mt-12 grid grid-cols-3 gap-72'>
+        <div className='mt-12 grid grid-cols-3 gap-72 mmd:flex mmd:flex-col mmd:gap-12'>
 
           {/* lists */}
-          <div className='col-start-1 col-end-2 flex flex-col'>
+          <div className='col-start-1 col-end-2 flex flex-col mmd:order-2'>
 
             {/* item-1 */}
 
@@ -81,7 +81,7 @@ const ForUser = () => {
 
             {/* item-3 */}
 
-            <div className='group w-[370px] grid grid-cols-4 gap-1 '>
+            <div className='group w-[370px] grid grid-cols-4 gap-1  '>
 
               <div className=' bg-gray-200 h-[85px] w-[85px] rounded-full col-start-1 col-end-2 items-center group-hover:bg-gray-100 group-hover:border-[#13263b] border-2  transition-all duration-700'>
                 <MdOutlineSecurity className='text-xl ml-[31px] mt-[33px] group-hover:text-[#13263b]  transition-all duration-1000' />
@@ -99,19 +99,19 @@ const ForUser = () => {
 
           {/* image */}
 
-          <img src="https://images.unsplash.com/photo-1606402179428-a57976d71fa4?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className='col-start-2 col-end-4 h-[512px] w-[641px]' />
+          <img src="https://images.unsplash.com/photo-1606402179428-a57976d71fa4?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className='col-start-2 col-end-4 h-[512px] w-[641px] mmd:order-1 mmd:h-[400px] mmd:w-[610px]' />
         </div>
 
 
         {/* Numbers */}
 
         <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
-          <motion.div className='mt-[50px] flex' variants={textVariants} whileInView="animate" initial="initial">
+          <motion.div className='mt-[50px] flex flex-wrap mmd:grid mmd:grid-cols-2 mmd:space-x-4 ' variants={textVariants} whileInView="animate" initial="initial">
 
             {/* Data1 */}
             <div className='mr-[130px] flex flex-col items-center'>
               <h1 className='font-bold text-[40px] text-[#13263b] '>{counterOn && <CountUp start={1000}
-                end={3981} duration={3} delay={1} />} </h1>
+                end={3981} duration={2} delay={0} />} </h1>
               <p className='text-sm text-[#777] '># Buy of properties</p>
 
             </div>
@@ -125,9 +125,9 @@ const ForUser = () => {
             </div>
 
             {/* Data3 */}
-            <div className='mr-[130px] flex flex-col items-center'>
+            <div className='mr-[130px] flex flex-col items-center '>
               <h1 className='font-bold text-[40px] text-[#13263b] '>{counterOn && <CountUp start={1000}
-                end={9812} duration={3} delay={0.5} />} </h1>
+                end={9812} duration={2} delay={0} />} </h1>
               <p className='text-sm text-[#777] '>#  of all properties</p>
 
             </div>
@@ -135,7 +135,7 @@ const ForUser = () => {
             {/* Data4 */}
             <div className='flex flex-col items-center'>
               <h1 className='font-bold text-[40px] text-[#13263b] '>{counterOn && <CountUp start={1000}
-                end={7081} duration={3} delay={0.5} />} </h1>
+                end={7081} duration={2} delay={0} />} </h1>
               <p className='text-sm text-[#777] '># of agent</p>
 
             </div>

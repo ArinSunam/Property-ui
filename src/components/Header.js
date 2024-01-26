@@ -22,7 +22,7 @@ const Header = () => {
   return (
     <div >
       <Navbar
-        className='bg-[#005555] ml-[100px] my-[20px] w-[1125px] py-7 flex justify-between items-center shadow-none border-none'>
+        className='bg-[#005555] ml-[100px] my-[20px] w-[1125px] py-7 flex justify-between items-center shadow-none border-none  mmd:w-[575px] mmd:ml-[60px]'>
         <div>
           <NavLink className='font-semibold text-2xl py-5 text' > Property</NavLink>
         </div>

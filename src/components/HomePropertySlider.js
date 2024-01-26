@@ -20,6 +20,27 @@ const HomePropertySlider = () => {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+
+    ]
 
   };
 
@@ -29,14 +50,14 @@ const HomePropertySlider = () => {
       <Slider {...settings} className='ml-[50px]'>
 
         {propertyData.map((data) => {
-          return <div className=' mt-12 h-[525px]'>
+          return <div className=' mt-12 h-[525px] mmd:ml-8 mmd:h-[700px]'>
 
             {/* Box */}
 
 
-            <img className='h-[250px] w-[380px] rounded-sm object-cover' src={data.img} alt="" />
+            <img className='h-[250px] w-[380px] rounded-sm object-cover mmd:w-[520px] mmd:h-[420px]' src={data.img} alt="" />
 
-            <div className='pt-3 ml-5 flex flex-col items-start space-y-4'>
+            <div className='pt-3 ml-7 flex flex-col items-start space-y-4'>
 
               <div >
                 <h1 className='mt-[12px] text-xl text-[#005555] font-semibold border border-b-2 border-b-[#005555] leading-7 mr-[320px] mb-3'>{data.price}</h1>

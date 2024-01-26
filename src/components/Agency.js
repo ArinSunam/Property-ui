@@ -15,10 +15,10 @@ const Agency = () => {
 
         {/* Agents */}
 
-        <div className='pl-[125px] pt-[60px] flex gap-16'>
+        <div className='pl-[125px] pt-[60px] flex gap-16 mmd:grid mmd:grid-cols-2 mmd:pl-[40px] mmd:gap-6 '>
 
           {agentData.map((data) => {
-            return <div className='bg-white h-[300px] w-[325px] '>
+            return <div className='bg-white h-[300px] w-[325px] mmd:w-[235px] mmd:h-[350px]'>
               <div className='relative bottom-12 flex flex-col items-center gap-3 ' >
 
                 <img className='h-[90px] w-[90px] rounded-full object-cover ' src={data.img} alt="" />
@@ -28,7 +28,7 @@ const Agency = () => {
                   <p className='text-sm text-gray-700'>{data.job}</p>
                 </div>
 
-                <p className='w-[296px] text-center text-sm text-gray-700'>{data.desc}</p>
+                <p className='w-[296px] mmd:w-[196px] text-center text-sm text-gray-700'>{data.desc}</p>
 
                 <div className='py-[8px] flex justify-between gap-7'>
 

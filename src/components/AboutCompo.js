@@ -26,8 +26,8 @@ const AboutCompo = () => {
 
       {/* properties */}
 
-      <motion.div className='h-[340px] bg-[#e6e6f7] w-[100vw] flex py-3 pb-5 ' variants={textVariants} whileInView="animate" initial="initial">
-        <div className='relative top-4 w-[250px] bg-white h-[270px] py-6 px-3 ml-[125px] text-center rounded'>
+      <motion.div className='h-[340px] bg-[#e6e6f7] w-[100vw] flex py-3 pb-5 mmd:h-[650px] mmd:grid mmd:grid-cols-2 mmd:pb-7  mmd:px-10' variants={textVariants} whileInView="animate" initial="initial">
+        <div className='relative top-4 w-[250px] bg-white h-[270px] py-6 px-3 ml-[125px] text-center rounded mmd:col-span-1 mmd:ml-8'>
           <GiFamilyHouse className='m-auto text-6xl text-[#13263b]' />
           <p className='text-[#13263b] font-semibold pt-2'>Our Properties</p>
           <p className='text-sm  text-gray-800 font-medium py-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores esse, adipisci </p>
@@ -39,7 +39,7 @@ const AboutCompo = () => {
         {/* sale */}
 
 
-        <div className='relative top-4 w-[250px] h-[270px] bg-white  py-6 px-3 ml-8 text-center rounded'>
+        <div className='relative top-4 w-[250px] h-[270px] bg-white  py-6 px-3 ml-8 text-center rounded mmd:col-span-1'>
 
           <BsBuildings className='m-auto text-6xl text-[#13263b]' />
           <p className='text-[#13263b] font-semibold pt-2'>Properties On sale</p>
@@ -50,7 +50,7 @@ const AboutCompo = () => {
         </div>
 
         {/* agents */}
-        <div className='relative top-4 w-[250px] h-[270px] bg-white  py-6 px-3 ml-8 text-center rounded'>
+        <div className='relative top-4 w-[250px] h-[270px] bg-white  py-6 px-3 ml-8 text-center rounded mmd:col-span-1'>
           <MdOutlineRealEstateAgent className='m-auto text-6xl text-[#13263b]' />
 
           <p className='text-[#13263b] font-semibold pt-2'>Real Estate Agent</p>

@@ -10,10 +10,11 @@ const Footer = () => {
   const empty = '';
   return (
     <div className='bg-[#efefef] px-20 py-16'>
-      <div className='grid grid-cols-8'>
+      <div className='grid grid-cols-8 mmd:flex mmd:flex-col  mmd:gap-9
+      '>
 
         {/* Contact */}
-        <div className='ml-[145px] col-start-1 col-end-4 flex flex-col  space-y-4  '>
+        <div className='ml-[145px] col-start-1 col-end-4 flex flex-col  space-y-4 mmd:ml-0 '>
           <h1 className='text-[12px] text-start text-[#13263b] uppercase font-extrabold '>Contact</h1>
           <p className='text-[#888] text-sm'>Baluwatar, Kathmandu-4, Nepal</p>
 
@@ -24,34 +25,40 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Sources */}
 
-        <div className='col-start-4 col-end-5 flex flex-col space-y-4'>
-          <h1 className='text-[12px] text-[#13263b] uppercase font-extrabold '>Sources</h1>
 
-          <div className='underline text-sm text-[#777] flex flex-col space-y-3'>
-            <NavLink className='hover:text-black hover:no-underline'>About us</NavLink>
-            <NavLink className='hover:text-black hover:no-underline'> Services</NavLink>
-            <NavLink className='hover:text-black hover:no-underline'>Vision</NavLink>
-            <NavLink className='hover:text-black hover:no-underline'>Mission</NavLink>
-            <NavLink className='hover:text-black hover:no-underline'>Term</NavLink>
-            <NavLink className='hover:text-black hover:no-underline'> Privacy</NavLink>
+        <div className='mmd:flex mmd:gap-20'>
+          {/* Sources */}
+
+          <div className='col-start-4 col-end-5 flex flex-col space-y-4'>
+            <h1 className='text-[12px] text-[#13263b] uppercase font-extrabold '>Sources</h1>
+
+            <div className='underline text-sm text-[#777] flex flex-col space-y-3'>
+              <NavLink className='hover:text-black hover:no-underline'>About us</NavLink>
+              <NavLink className='hover:text-black hover:no-underline'> Services</NavLink>
+              <NavLink className='hover:text-black hover:no-underline'>Vision</NavLink>
+              <NavLink className='hover:text-black hover:no-underline'>Mission</NavLink>
+              <NavLink className='hover:text-black hover:no-underline'>Term</NavLink>
+              <NavLink className='hover:text-black hover:no-underline'> Privacy</NavLink>
+            </div>
           </div>
-        </div>
-        {/* Sources col 2 */}
+          {/* Sources col 2 */}
 
-        <div className='col-start-5 col-end-6 flex flex-col space-y-4'>
-          <h1 className='text-xs'>{empty}</h1>
+          <div className='col-start-5 col-end-6 flex flex-col space-y-4'>
+            <h1 className='text-xs'>{empty}</h1>
 
-          <div className='underline text-sm text-[#777] flex flex-col space-y-3 pt-4'>
-            <NavLink className='hover:text-black hover:no-underline'>Partners </NavLink>
-            <NavLink className='hover:text-black hover:no-underline'> Business</NavLink>
-            <NavLink className='hover:text-black hover:no-underline'>Carrer</NavLink>
-            <NavLink className='hover:text-black hover:no-underline'>Blog</NavLink>
-            <NavLink className='hover:text-black hover:no-underline'>FAQ</NavLink>
-            <NavLink className='hover:text-black hover:no-underline'> Creative</NavLink>
+            <div className='underline text-sm text-[#777] flex flex-col space-y-3 pt-4'>
+              <NavLink className='hover:text-black hover:no-underline'>Partners </NavLink>
+              <NavLink className='hover:text-black hover:no-underline'> Business</NavLink>
+              <NavLink className='hover:text-black hover:no-underline'>Carrer</NavLink>
+              <NavLink className='hover:text-black hover:no-underline'>Blog</NavLink>
+              <NavLink className='hover:text-black hover:no-underline'>FAQ</NavLink>
+              <NavLink className='hover:text-black hover:no-underline'> Creative</NavLink>
+            </div>
           </div>
+
         </div>
+
 
         {/* Links */}
 

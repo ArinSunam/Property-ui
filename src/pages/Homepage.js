@@ -12,6 +12,7 @@ import { animate, motion } from "framer-motion";
 
 
 
+
 const Homepage = () => {
 
   const textVariants = {
@@ -49,8 +50,8 @@ const Homepage = () => {
     <>
       {/* Section above the image slider */}
 
-      <div className="absolute  h-full w-full bg-black/0 z-50">
-        <Header />
+      <div className="absolute  h-full w-full bg-black/0 z-40">
+        <Header className='z-50' />
         <div className='grid items-center justify-center mt-[155px] space-y-7' >
           <motion.h1 className='text-white text-4xl font-medium ' variants={textVariants} initial="initial" animate="animate" >Easiest way to find your dream home</motion.h1>
 
@@ -58,7 +59,7 @@ const Homepage = () => {
             placeholder='Your ZIP code or City e.g. Dharan'
           ></input>
 
-            <Button className='ml-2 bg-[#005555] rounded-full'
+            <Button className='ml-2 bg-[#005555] rounded-full z-30'
               size='lg'
 
             >Search</Button>

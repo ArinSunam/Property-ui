@@ -1,0 +1,10 @@
+@media only screen and (max-width: 768px) {
+  .Nav {
+    display: none;
+    position: fixed;
+  }
+
+  .menu__active {
+    display: block;
+  }
+}

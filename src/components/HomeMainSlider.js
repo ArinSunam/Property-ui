@@ -18,7 +18,7 @@ const HomeMainSlider = () => {
   return (
     <div>
 
-      <Slider {...settings} className="w-[100%] md:h-[100vh] h-[100vh] overflow-hidden ">
+      <Slider {...settings} className="w-[100%]  md:h-[100vh] h-[100vh] overflow-hidden ">
         <div className="slider__item-01 h-[100vh]">
         </div>
 

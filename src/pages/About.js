@@ -58,7 +58,7 @@ const About = () => {
 
         <h1 className='text-3xl text-[#13263b] pb-5'>About Us</h1>
 
-        <div className='text-start text-sm text-[#777] grid grid-cols-2 gap-5 '>
+        <div className='text-start text-sm text-[#777] grid grid-cols-2 gap-5 mmd:flex mmd:flex-col'>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, natus? Doloremque eum eaque tempora vel nobis nisi quam similique deleniti?</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, natus? Doloremque eum eaque tempora vel nobis nisi quam similique deleniti?</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, natus? Doloremque eum eaque tempora vel nobis nisi quam similique deleniti?</p>

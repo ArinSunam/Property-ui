@@ -47,15 +47,16 @@ const HomePropertySlider = () => {
   return (
     <div>
 
-      <Slider {...settings} className='ml-[50px]'>
+      <Slider {...settings} className='ml-[50px] msm:ml-0 msm:mr-2'>
 
         {propertyData.map((data) => {
-          return <div className=' mt-12 h-[525px] mmd:ml-8 mmd:h-[700px]'>
+          return <div className=' mt-12 h-[525px] mmd:ml-8 mmd:h-[700px] msm:h-[520px] '>
 
             {/* Box */}
 
 
-            <img className='h-[250px] w-[380px] rounded-sm object-cover mmd:w-[520px] mmd:h-[420px]' src={data.img} alt="" />
+            <img className='h-[250px] w-[380px] rounded-sm object-cover mmd:w-[520px] mmd:h-[420px] msm:w-[85vw]
+            msm:h-[250px]' src={data.img} alt="" />
 
             <div className='pt-3 ml-7 flex flex-col items-start space-y-4'>
 

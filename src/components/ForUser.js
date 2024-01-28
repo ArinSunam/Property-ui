@@ -33,7 +33,7 @@ const ForUser = () => {
 
   return (
     <div className='mt-[100px] '>
-      <div className='bg-[#f7f7f9] py-[64px] px-[125px]'>
+      <div className='bg-[#f7f7f9] py-[64px] px-[125px] msm:px-4'>
 
         {/* TOPICS */}
 
@@ -106,7 +106,7 @@ const ForUser = () => {
         {/* Numbers */}
 
         <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
-          <motion.div className='mt-[50px] flex flex-wrap mmd:grid mmd:grid-cols-2 mmd:space-x-4 ' variants={textVariants} whileInView="animate" initial="initial">
+          <motion.div className='mt-[50px] flex flex-wrap mmd:grid mmd:grid-cols-2 mmd:space-x-4 msm:ml-9' variants={textVariants} whileInView="animate" initial="initial">
 
             {/* Data1 */}
             <div className='mr-[130px] flex flex-col items-center'>

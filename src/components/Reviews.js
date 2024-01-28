@@ -40,7 +40,7 @@ const Reviews = () => {
 
 
   return (
-    <div className='pt-[60px] ml-[125px]'>
+    <div className='pt-[60px] ml-[125px] msm:ml-[40px]'>
 
       <h1 className='text-3xl text-[#13263b] mb-16 mmd:text-4xl'>Customer Says</h1>
 
@@ -51,12 +51,12 @@ const Reviews = () => {
         {reviewData.map((data) => {
           return <div>
             <div className='h-[440px] w-[270px]
-            mmd:w-[420px]'>
+            mmd:w-[420px] msm:w-[300px] msm:h-[360px]'>
 
 
               <div className='flex flex-col items-baseline space-y-4 '>
 
-                <img className='h-[150px] w-[150px] rounded-full object-cover mmd:h-[210px] mmd:w-[210px]' src={data.img} alt="" />
+                <img className='h-[150px] w-[150px] rounded-full object-cover mmd:h-[210px] mmd:w-[210px] msm:h-[100px] msm:w-[100px]' src={data.img} alt="" />
                 <div className='my-2 space-y-3'>
                   <div className=' text-sm flex gap-1'>
                     <p className='text-yellow-700  '><FaStar /></p>

@@ -15,12 +15,12 @@ const Header = () => {
   return (
     <div >
       <Navbar
-        className='bg-[#005555] ml-[100px] my-[20px] w-[1125px] py-7 flex justify-between items-center shadow-none border-none  mmd:w-[575px] mmd:ml-[60px]'>
+        className='bg-[#005555] ml-[100px] my-[20px] w-[1125px] py-7 flex justify-between items-center shadow-none border-none  mmd:w-[575px] msm:w-[88vw] mmd:ml-[55px] msm:ml-[25px] msm:py-5'>
         <div>
           <NavLink className='font-semibold text-2xl py-5 text' > Property</NavLink>
         </div>
 
-        <div className='Nav mmd:fixed mmd:right-0 mmd:top-0 mmd:h-[30vw] 
+        <div className='Nav mmd:fixed mmd:right-0 mmd:top-0 mmd:h-[30vw] msm:h-[23vh]
         mmd:bg-white mmd:w-2/5 mmd:z-50 ' ref={menuRef} onClick={toggleMenu}>
           <div className='hidden mmd:flex mmd:justify-end mmd:pr-5 mmd:cursor-pointer'>
             <p className='text-black'><FaTimes /></p>

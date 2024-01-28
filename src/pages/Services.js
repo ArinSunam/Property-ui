@@ -65,11 +65,12 @@ const Services = () => {
 
 
       <div className='py-8  bg-[#e6e6f7]'>
-        <motion.div className='mx-[110px]  grid grid-cols-4 space-x-6 space-y-7' variants={textVariants} animate="boxAnimate" initial="initial">
+        <motion.div className='mx-[110px] mmd:mx-[50px] msm:mx-1 grid mmd:grid grid-cols-4 mmd:grid-cols-2 space-x-6 
+        space-y-7' variants={textVariants} animate="boxAnimate" initial="initial">
 
           {/* properties */}
 
-          <div className='ml-5 relative top-7 w-[250px] bg-white h-[270px] py-6 px-3  text-center rounded col-span-1'>
+          <div className='ml-5 relative top-7 w-[250px] msm:w-[45vw] bg-white h-[270px] py-6 px-3  text-center rounded col-span-1'>
             <GiFamilyHouse className='m-auto text-6xl text-[#13263b]' />
             <p className='text-[#13263b] font-semibold pt-2'>Our Properties</p>
             <p className='text-sm  text-gray-800 font-medium py-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores esse, adipisci </p>
@@ -81,7 +82,7 @@ const Services = () => {
           {/* sale */}
 
 
-          <div className=' w-[250px] h-[270px] bg-white  py-6 px-3 ml-8 text-center rounded col-span-1'>
+          <div className=' w-[250px] msm:w-[45vw] h-[270px] bg-white  py-6 px-3 ml-8 text-center rounded col-span-1'>
 
             <BsBuildings className='m-auto text-6xl text-[#13263b]' />
             <p className='text-[#13263b] font-semibold pt-2'>Properties On Sale</p>
@@ -92,7 +93,7 @@ const Services = () => {
           </div>
 
           {/* agents */}
-          <div className=' w-[250px] h-[270px] bg-white  py-6 px-3 ml-8 text-center rounded  col-span-1'>
+          <div className=' w-[250px] msm:w-[45vw] h-[270px] bg-white  py-6 px-3 ml-8 text-center rounded  col-span-1'>
             <MdOutlineRealEstateAgent className='m-auto text-6xl text-[#13263b]' />
 
             <p className='text-[#13263b] font-semibold pt-2'>Real Estate Agent</p>
@@ -104,7 +105,7 @@ const Services = () => {
 
 
           {/* house on sale */}
-          <div className=' w-[250px] h-[270px] bg-white  py-6 px-3 ml-8 text-center rounded col-span-1'>
+          <div className=' w-[250px] msm:w-[45vw] h-[270px] bg-white  py-6 px-3 ml-8 text-center rounded col-span-1'>
 
             <GiVikingLonghouse className='m-auto text-6xl text-[#13263b]' />
             <p className='text-[#13263b] font-semibold pt-2'>House on Sale</p>
@@ -114,7 +115,7 @@ const Services = () => {
 
           </div>
           {/* property2 */}
-          <div className=' w-[250px] h-[270px] bg-white  py-6 px-3 ml-8 text-center rounded col-span-1'>
+          <div className=' w-[250px] msm:w-[45vw] h-[270px] bg-white  py-6 px-3 ml-8 text-center rounded col-span-1'>
 
             <GiFamilyHouse className='m-auto text-6xl text-[#13263b]' />
             <p className='text-[#13263b] font-semibold pt-2'>Our Proporties</p>
@@ -124,7 +125,7 @@ const Services = () => {
 
           </div>
           {/* sale2 */}
-          <div className=' w-[250px] h-[270px] bg-white  py-6 px-3 ml-8 text-center rounded col-span-1'>
+          <div className=' w-[250px] msm:w-[45vw] h-[270px] bg-white  py-6 px-3 ml-8 text-center rounded col-span-1'>
 
             <BsBuildings className='m-auto text-6xl text-[#13263b]' />
             <p className='text-[#13263b] font-semibold pt-2'>Proporties on Sale</p>
@@ -134,7 +135,7 @@ const Services = () => {
 
           </div>
           {/* agents2 */}
-          <div className=' w-[250px] h-[270px] bg-white  py-6 px-3 ml-8 text-center rounded col-span-1'>
+          <div className=' w-[250px] msm:w-[45vw] h-[270px] bg-white  py-6 px-3 ml-8 text-center rounded col-span-1'>
 
             <MdOutlineRealEstateAgent className='m-auto text-6xl text-[#13263b]' />
             <p className='text-[#13263b] font-semibold pt-2'>Real Estate Agent</p>
@@ -144,7 +145,7 @@ const Services = () => {
 
           </div>
           {/* house on sale */}
-          <div className=' w-[250px] h-[270px] bg-white  py-6 px-3 ml-8 text-center rounded col-span-1'>
+          <div className=' w-[250px] msm:w-[45vw] h-[270px] bg-white  py-6 px-3 ml-8 text-center rounded col-span-1'>
 
             <GiVikingLonghouse className='m-auto text-6xl text-[#13263b]' />
             <p className='text-[#13263b] font-semibold pt-2'>House on Sale</p>

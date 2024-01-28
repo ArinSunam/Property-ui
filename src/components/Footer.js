@@ -27,7 +27,7 @@ const Footer = () => {
 
 
 
-        <div className='mmd:flex mmd:gap-20'>
+        <div className='mmd:flex mmd:gap-20 flex gap-9'>
           {/* Sources */}
 
           <div className='col-start-4 col-end-5 flex flex-col space-y-4'>

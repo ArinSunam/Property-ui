@@ -53,7 +53,9 @@ const Homepage = () => {
       <div className="absolute  h-full w-full bg-black/0 z-40">
         <Header className='z-50' />
         <div className='grid items-center justify-center mt-[155px] space-y-7 msm:mt-[250px]' >
-          <motion.h1 className='text-white text-4xl font-medium msm:text-2xl msm:px-[25px] msm:text-center msm:font-semibold' variants={textVariants} initial="initial" animate="animate" >Easiest way to find your dream home</motion.h1>
+          <motion.h1 className='text-white text-4xl font-medium 
+          mmd:text-2xl
+          mmd:px-[40px]  msm:px-[25px] msm:text-center mmd:font-semibold' variants={textVariants} initial="initial" animate="animate" >Easiest way to find your dream home</motion.h1>
 
           <motion.div className='relative left-3' variants={textVariants} initial="initial" animate="searchAnimate"><input className='rounded-full bg-white text-black outline-none border-none w-[400px] p-[12px] msm:w-[55vw] msm:py-[14px]'
             placeholder='Your ZIP code or City e.g. Dharan'

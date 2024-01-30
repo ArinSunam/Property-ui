@@ -46,21 +46,21 @@ const Contact = () => {
     <div>
       {/* Header Section */}
 
-      <div className="flex flex-col space-y-[80px] m-0 h-[70vh] w-[100vw]  bg-cover" style={{ background: "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1531971589569-0d9370cbe1e5?q=80&w=1481&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')" }}>
+      <div className="flex flex-col space-y-[80px] m-0 h-[70vh] w-[100vw] msm:h-[50vh] bg-cover" style={{ background: "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1531971589569-0d9370cbe1e5?q=80&w=1481&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')" }}>
         <Header />
 
         <div className='space-y-4 flex flex-col items-center'>
-          <motion.h1 className='text-white text-[40px] font-semibold' variants={textVariants} animate="animate" initial="initial">Contact Us</motion.h1>
+          <motion.h1 className='text-white text-[40px] font-semibold mmd:text-[28px]' variants={textVariants} animate="animate" initial="initial">Contact Us</motion.h1>
           <motion.div variants={textVariants} animate="smallAnimate" initial="initial">
-            <span className='text-white'>Home</span>
-            <span className='text-gray-600 p-1'>/    Contact Us</span>
+            <span className='text-white mmd:text-sm'>Home</span>
+            <span className='text-gray-600 p-1 mmd:text-sm'>/    Contact Us</span>
           </motion.div>
         </div>
       </div>
 
       {/* BODY */}
 
-      <motion.div className='mt-[70px] ml-[40px] grid grid-cols-3' variants={textVariants} animate="boxAnimate" initial="initial">
+      <motion.div className='mt-[70px] ml-[40px] grid grid-cols-3 mmd:flex mmd:flex-col msm:ml-3 msm:mt-[30px]' variants={textVariants} animate="boxAnimate" initial="initial">
         <div className='flex flex-col '>
 
           {/* item-1 */}
@@ -132,10 +132,10 @@ const Contact = () => {
 
         {/* Form */}
 
-        <div className='col-start-2 col-end-4 place-items-center flex flex-col items-center space-y-5'>
-          <div className='flex justify-between gap-7 '>
-            <Input label='Your Name' size='lg' className='w-[326px]' />
-            <Input label='Your Email' size='lg' className='w-[326px]' />
+        <div className='col-start-2 col-end-4  flex flex-col space-y-5 pr-24 msm:pr-7 msm:ml-5'>
+          <div className='flex justify-between gap-7 msm:gap-2'>
+            <Input label='Your Name' size='lg' className='w-[326px] msm:w-[40vw]' />
+            <Input label='Your Email' size='lg' className='w-[326px] msm:w-[40vw] msm:relative msm:right-7' />
           </div>
 
 
@@ -143,20 +143,24 @@ const Contact = () => {
             <Input label='Subject' size='lg' className='w-[692px] ' />
             <Input label='Message' className='w-[692px] py-36
              ' />
-
           </div>
 
+          {/* BUTTON */}
+          <Button className='bg-[#005555]  py-4  w-[12vw]  rounded-full mmd:mx-0 relative top-64 mmd:w-[27vw]'>Send Message</Button>
 
         </div>
 
       </motion.div>
 
-      {/* BUTTON */}
-      <Button className='bg-[#005555] mt-5 py-4 mx-[600px] rounded-full'>Send Message</Button>
+
+
+
+
+
 
       {/* FOOTER*/}
 
-      <div className='mt-[58px]'>
+      <div className='mt-[88px] mmd:mt-[300px]'>
         <Footer />
       </div>
 

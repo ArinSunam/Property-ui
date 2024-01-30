@@ -105,7 +105,8 @@ const ForUser = () => {
 
         {/* Numbers */}
 
-        <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
+        <ScrollTrigger
+          onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
           <motion.div className='mt-[50px] flex flex-wrap mmd:grid mmd:grid-cols-2 mmd:space-x-4 msm:ml-9' variants={textVariants} whileInView="animate" initial="initial">
 
             {/* Data1 */}

@@ -48,14 +48,14 @@ const Services = () => {
   return (
     <div>
       {/* HEADER */}
-      <div className="flex flex-col space-y-[80px] m-0 h-[70vh] w-[100vw]  bg-cover" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1569428047118-ae9338065103?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')" }}>
+      <div className="flex flex-col space-y-[80px] m-0 h-[70vh] w-[100vw] msm:h-[50vh] bg-cover" style={{ background: "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('https://images.unsplash.com/photo-1561501878-aabd62634533?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')" }}>
         <Header />
 
         <div className='space-y-4 flex flex-col items-center'>
-          <motion.h1 className='text-white text-[40px] font-semibold' variants={textVariants} animate="animate" initial="initial">Services</motion.h1>
+          <motion.h1 className='text-white text-[40px] font-semibold mmd:text-[28px]' variants={textVariants} animate="animate" initial="initial">Services</motion.h1>
           <motion.div variants={textVariants} animate="smallAnimate" initial="initial">
-            <span className='text-white'>Home</span>
-            <span className='text-gray-600 p-1'>/    Services</span>
+            <span className='text-white mmd:text-sm'>Home</span>
+            <span className='text-gray-600 p-1 mmd:text-sm'>/    Services</span>
           </motion.div>
         </div>
       </div>
@@ -64,7 +64,7 @@ const Services = () => {
       {/* ABOUT SEC */}
 
 
-      <div className='py-8  bg-[#e6e6f7]'>
+      <div className='py-8 msm:py-3 bg-[#e6e6f7]'>
         <motion.div className='mx-[110px] mmd:mx-[50px] msm:mx-1 grid mmd:grid grid-cols-4 mmd:grid-cols-2 space-x-6 
         space-y-7' variants={textVariants} animate="boxAnimate" initial="initial">
 

@@ -37,7 +37,7 @@ const ForUser = () => {
 
         {/* TOPICS */}
 
-        <h1 className='font-[600] text-[32px] text-[#13263b]  text-center w-[380px] m-auto mb-4'>Let's find home that's perfect for you</h1>
+        <h1 className='font-[600] text-[32px] msm:text-[28px] text-[#13263b]  text-center w-[380px] m-auto mb-4'>Let's find home that's perfect for you</h1>
         <p className='text-sm text-center text-[#777] w-[300px]  m-auto mb-4 '>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti architecto alias consectetur </p>
 
 

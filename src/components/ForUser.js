@@ -111,7 +111,7 @@ const ForUser = () => {
 
             {/* Data1 */}
             <div className='mr-[130px] flex flex-col items-center'>
-              <h1 className='font-bold text-[40px] text-[#13263b] '>{counterOn && <CountUp start={1000}
+              <h1 className='font-bold text-[40px] msm:text-[30px] text-[#13263b] '>{counterOn && <CountUp start={1000}
                 end={3981} duration={2} delay={0} />} </h1>
               <p className='text-sm text-[#777] '># Buy of properties</p>
 
@@ -119,7 +119,7 @@ const ForUser = () => {
 
             {/* Data2 */}
             <div className='mr-[130px] flex flex-col items-center'>
-              <h1 className='font-bold text-[40px] text-[#13263b] mmd:mr-0 '>{counterOn && <CountUp start={1000}
+              <h1 className='font-bold text-[40px] msm:text-[30px]  text-[#13263b] mmd:mr-0 '>{counterOn && <CountUp start={1000}
                 end={2217} duration={2} delay={0} />} </h1>
               <p className='text-sm text-[#777] '># of sell properties</p>
 
@@ -127,7 +127,7 @@ const ForUser = () => {
 
             {/* Data3 */}
             <div className='mr-[130px] flex flex-col items-center mmd:relative mmd:right-[70px]'>
-              <h1 className='font-bold text-[40px] text-[#13263b] '>{counterOn && <CountUp start={1000}
+              <h1 className='font-bold text-[40px] msm:text-[30px]  text-[#13263b] '>{counterOn && <CountUp start={1000}
                 end={9812} duration={2} delay={0} />} </h1>
               <p className='text-sm text-[#777] '>#  of all properties</p>
 
@@ -135,7 +135,7 @@ const ForUser = () => {
 
             {/* Data4 */}
             <div className='flex flex-col items-center'>
-              <h1 className='font-bold text-[40px] text-[#13263b] '>{counterOn && <CountUp start={1000}
+              <h1 className='font-bold text-[40px] msm:text-[30px]  text-[#13263b] '>{counterOn && <CountUp start={1000}
                 end={7081} duration={2} delay={0} />} </h1>
               <p className='text-sm text-[#777] '># of agent</p>
 
